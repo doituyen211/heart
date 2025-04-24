@@ -21,12 +21,59 @@
       width: 100%;
       height: 100%;
     }
+
+    .title {
+      position: absolute;
+      top: 30px;
+      /* Đặt cách mép trên màn hình */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 36px;
+      /* Kích thước chữ */
+      color: white;
+      font-weight: bold;
+      z-index: 10;
+    }
+
+    .subtitle {
+      position: absolute;
+      top: 100px;
+      /* Đặt cách mép trên màn hình */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      /* Kích thước chữ */
+      color: white;
+      font-weight: bold;
+      z-index: 10;
+    }
+
+    .go-to-memory {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 24px;
+      background-color: rgba(255, 255, 255, 0.8);
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      z-index: 10;
+      transition: background-color 0.3s ease;
+    }
+
+    .go-to-memory:hover {
+      background-color: #fff;
+    }
   </style>
 </HEAD>
 
 <BODY>
+  <h1 class="title">Marou xin chào !!!</h1>
+  <h2 class="subtitle">Trái tim của lý tuân nhưng mà phiên bản "dtuyen"</h2>
+  <a href="memory.html" class="go-to-memory">hall of frames</a>
   <canvas id="pinkboard"></canvas>
-  <a href="memory.html">hall of frames</a>
   <script>
     /*
    * Settings
